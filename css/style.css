@@ -11,9 +11,10 @@ body{
     align-items: center;
     justify-content: center;
     background-color: black;
+    overflow: hidden;
 }
 .greetings{
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 900;
 }
 .greetings > span{
