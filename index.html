@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <title>Flowers</title>
+</head>
+<body>
+    <div class="greetings">
+    <!-- silahkan menambah kata sesuai keinginan dengan <span>text...</span -->
+        <span>I</span>
+        <span>'</span>
+        <span>M</span>
+        <span>&nbsp</span>
+        <span>S</span>
+        <span>O</span>
+        <span>&nbsp</span>
+        <span>S</span>
+        <span>O</span>
+        <span>R</span>
+        <span>R</span>
+        <span>Y</span>
+    </div>
+    <div class="description">
+      <span>Sebagai permintaan maaf aku, aku ada sesuatu buat kamuu!!</span>
+    </div>
+    <div class="button">
+        <button id="play">
+            <a href="flower.html">Klik disini</a>
+        </button>
+      <script>
+        var musik=new Audio();
+        musik.src="audio/p.mp3"
+        musik.loop=true;
+        musik.play();
+
+        function mulaiAudio() {
+          var play=document.getElementById("play");
+
+          play.addEventListener('click', fplay);
+          
+        }
+
+        window.addEventListener('load', mulaiAudio);
+      </script>
+    </div>
+</body>
+</html>
